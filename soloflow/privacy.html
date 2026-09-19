@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloFlow Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      color: #111;
+      background: #fafafa;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #f2f2f7; background: #0c0c0e; }
+      a { color: #64b5ff; }
+      h1, h2 { color: #fff; }
+      .muted { color: #a1a1aa; }
+      code { background: #1c1c1e; }
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+    p, li { font-size: 0.98rem; }
+    .muted { color: #666; font-size: 0.9rem; }
+    a { color: #007AFF; }
+    ul { padding-left: 1.2rem; }
+    code { font-size: 0.9em; padding: 1px 4px; border-radius: 4px; background: #eee; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="muted">
+    SoloFlow (“we”, “the App”), operated by SoloFlow Team<br />
+    Last updated: September 19, 2026
+  </p>
+
+  <p>
+    SoloFlow is a <strong>local-first</strong> iOS app for 1099 invoicing, expense tracking,
+    and tax-deduction estimates. This policy explains what data is processed, where it stays,
+    and what limited network use may occur.
+  </p>
+
+  <h2>1. Summary</h2>
+  <ul>
+    <li>Invoices, expenses, receipt images, OCR text, and tax estimates are stored <strong>on your device</strong> (SQLite and app sandbox).</li>
+    <li>We do <strong>not</strong> operate a financial-data cloud and do <strong>not</strong> require an account to use core features.</li>
+    <li>Receipt OCR uses <strong>on-device</strong> Apple Vision. Images are not uploaded for OCR.</li>
+    <li>Optional subscriptions (Apple In-App Purchase), product analytics, and OTA updates may use the network without storing your financial documents on our servers.</li>
+  </ul>
+
+  <h2>2. Data stored on your device</h2>
+  <p>The App may store the following in the App’s private storage on your iPhone:</p>
+  <ul>
+    <li>Invoice and client records (amounts stored as integer cents)</li>
+    <li>Expense records, categories, and deduction ratios</li>
+    <li>Receipt images and related file paths in the app sandbox</li>
+    <li>OCR text derived on-device</li>
+    <li>Payment profile notes / QR image you choose to add</li>
+    <li>App preferences and subscription status cached from Apple / RevenueCat</li>
+  </ul>
+  <p>
+    Deleting the App removes this local data. Export or back up anything you need before uninstalling.
+  </p>
+
+  <h2>3. Camera and photo library</h2>
+  <p>
+    Camera and photo library access are used only when you scan or import a receipt.
+    Media is copied into the App’s private storage for on-device OCR and your records.
+    We do not upload your photos or receipt images to our servers for storage or recognition.
+  </p>
+
+  <h2>4. On-device OCR</h2>
+  <p>
+    Text recognition for receipts runs with Apple’s Vision framework on your device
+    (languages configured for English / en-US as applicable).
+    OCR does not require an internet connection and does not send the image to us.
+  </p>
+
+  <h2>5. Subscriptions and payments</h2>
+  <p>
+    Paid Pro access is sold through Apple In-App Purchase and may be validated with
+    RevenueCat acting as a receipt / entitlement intermediary.
+  </p>
+  <ul>
+    <li>Apple processes payment; we do not receive your full payment card number.</li>
+    <li>We may receive subscription status (e.g. active Pro entitlement), product identifiers, and anonymous app-user identifiers needed to unlock features.</li>
+    <li>Manage or cancel in iOS Settings → [Your Name] → Subscriptions, or via links in the App.</li>
+    <li>Billing, renewal, and refunds are governed by Apple. See also our
+      <a href="./terms.html">Terms of Use</a> and
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple’s Standard EULA</a>.</li>
+  </ul>
+
+  <h2>6. Analytics (optional / product-level)</h2>
+  <p>
+    If analytics is enabled, we may collect anonymous product events (for example app open,
+    feature used, purchase flow outcome) via a provider such as PostHog.
+  </p>
+  <ul>
+    <li>We do <strong>not</strong> send invoice line items, receipt images, OCR full text, merchant names, or dollar amounts in analytics properties.</li>
+    <li>Events are sanitized to block file paths and free-text that could contain financial content.</li>
+    <li>App Tracking Transparency (ATT) is respected where required; we do not use analytics to track you across other companies’ apps for advertising.</li>
+  </ul>
+
+  <h2>7. Updates and diagnostics</h2>
+  <p>
+    The App may check for over-the-air (OTA) updates or use Apple / Expo services to deliver
+    binary or JS updates. Crash or diagnostic data, if collected, is used to improve stability
+    and is not used to reconstruct your financial records.
+  </p>
+
+  <h2>8. Data we do not sell</h2>
+  <p>
+    We do not sell your personal information or financial documents.
+    We do not use your invoice or expense content for advertising.
+  </p>
+
+  <h2>9. Children</h2>
+  <p>
+    The App is not directed at children under 13. Do not use the App if you are under 13.
+  </p>
+
+  <h2>10. International users</h2>
+  <p>
+    Core financial data stays on your device. Limited network services (subscriptions, analytics,
+    updates) may be processed in the United States or other regions where our providers operate.
+  </p>
+
+  <h2>11. Changes</h2>
+  <p>
+    We may update this Privacy Policy. The “Last updated” date will change when we do.
+    Material changes may also be noted in an App update or on this page.
+  </p>
+
+  <h2>12. Contact</h2>
+  <p>
+    SoloFlow is operated by <strong>SoloFlow Team</strong>.
+    Privacy questions:
+    <a href="mailto:alan2012186186@gmail.com">alan2012186186@gmail.com</a>.
+  </p>
+
+  <p class="muted">
+    Related:
+    <a href="./terms.html">Terms of Use (EULA)</a> ·
+    <a href="./support.html">Support</a>
+  </p>
+</body>
+</html>
