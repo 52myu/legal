@@ -1,46 +1,28 @@
-# SoloFlow legal pages (GitHub Pages)
+# SoloFlow legal pages
 
-Static HTML for App Store compliance.
+Hosted on GitHub Pages under:
 
-**Published base URL:**
+**https://52myu.github.io/legal/soloflow/**
 
-```text
-https://52myu.github.io/legal/
-```
-
-| Page | URL |
-|------|-----|
-| Privacy Policy | https://52myu.github.io/legal/privacy.html |
-| Terms of Use (EULA) | https://52myu.github.io/legal/terms.html |
-| Support | https://52myu.github.io/legal/support.html |
+| Document | URL |
+|----------|-----|
+| Privacy Policy | https://52myu.github.io/legal/soloflow/privacy.html |
+| Terms of Use (EULA) | https://52myu.github.io/legal/soloflow/terms.html |
+| Support | https://52myu.github.io/legal/soloflow/support.html |
 
 ## Contents
 
-- `privacy.html` — Privacy Policy (local-first, on-device OCR, analytics limits)
-- `terms.html` — Terms of Use with **Apple auto-renewal** language and link to [Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
-- `support.html` — Support / FAQ (App Store Support URL)
+- `privacy.html` — local-first data, OCR, subscriptions, analytics, **user-initiated exports**, **local notifications**, USD
+- `terms.html` — EULA + Apple auto-renewal language + **not tax advice** + USD lock
+- `support.html` — contact, FAQ (backup vs CPA, currency, reminders)
 
-## Deploy
+## App Store Connect
 
-1. Publish these HTML files to the GitHub Pages site for `52myu.github.io/legal/` (e.g. repo `legal` root, or Pages path `/legal`).
-2. In **App Store Connect → App Information**:
-   - Privacy Policy URL → `https://52myu.github.io/legal/privacy.html`
-   - Support URL → `https://52myu.github.io/legal/support.html`
-3. For subscriptions, the paywall / EULA link should point to `terms.html` (or Apple Standard EULA). Terms already incorporate Apple’s auto-renew rules and Standard EULA.
+1. Publish these HTML files so they are reachable at `…/legal/soloflow/*.html` (must match live site after edits).
+2. In App Store Connect set:
+   - Privacy Policy URL → `https://52myu.github.io/legal/soloflow/privacy.html`
+   - Support URL → `https://52myu.github.io/legal/soloflow/support.html`
 
-Source copies live in this repo under `docs/soloflow/` for version control; deploy the three HTML files to the Pages site above.
+App code reads the same URLs from `src/config/legalUrls.ts`.
 
-## App Store numeric ID
-
-After the app is created in App Store Connect, replace placeholder `id0000000000` in the client (Share / Rate links) with the real Apple ID, e.g. `https://apps.apple.com/app/id1234567890`.
-
-Set in code:
-
-```ts
-// src/config/legalUrls.ts
-export const APP_STORE_ID = "1234567890";
-```
-
-## Contact
-
-Privacy / support email used in these pages: `alan2012186186@gmail.com` (update if you use a different public address).
+**Important:** Editing files in this repo does not update GitHub Pages until you deploy/push the `legal` hosting repo (or whatever publishes `52myu.github.io`).

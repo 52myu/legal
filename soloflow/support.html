@@ -31,8 +31,8 @@
   </style>
 </head>
 <body>
-  <h1>SoloFlow Support</h1>
-  <p class="muted">Local-first 1099 invoices &amp; smart tax deductions · Last updated: September 19, 2026</p>
+  <h1>Support</h1>
+  <p class="muted">SoloFlow · Last updated: September 20, 2026</p>
 
   <h2>1. Contact us</h2>
   <p>
@@ -48,15 +48,33 @@
     <li>iPhone with a recent iOS version supported by the App Store listing.</li>
     <li>Camera (optional) for receipt scanning; you can also pick from Photos.</li>
     <li>On-device Vision OCR works best with a flat, well-lit receipt that fills the frame (or the document scanner when available).</li>
+    <li>Amounts and tax estimates assume <strong>USD</strong>.</li>
   </ul>
 
   <h2>3. Frequently asked questions</h2>
 
   <h3>Where is my data stored?</h3>
   <p>
-    Locally on your iPhone (SQLite and app sandbox). Invoices, expenses, and receipt images
-    are not uploaded to a SoloFlow cloud. If you delete the App, local data is removed —
-    export anything important first.
+    Locally on your iPhone (SQLite and app sandbox). Invoices, clients, payment records, expenses,
+    and receipt images are not uploaded to a SoloFlow cloud. If you delete the App, local data is removed —
+    export a backup first.
+  </p>
+
+  <h3>How do I back up or restore?</h3>
+  <p>
+    In the App, open <strong>More → Backup</strong>:
+  </p>
+  <ul>
+    <li><strong>Export backup ZIP</strong> — full restore package (not the same as a CPA tax export).</li>
+    <li><strong>Restore from backup ZIP</strong> — you will see counts (clients, invoices, etc.) before confirming.
+      Restore <strong>replaces all local business data</strong> on this iPhone.</li>
+  </ul>
+
+  <h3>What is a CPA tax package?</h3>
+  <p>
+    A period-filtered ZIP (CSV, optional receipts/PDFs) for sharing with an accountant.
+    It is <strong>not</strong> a full device backup and <strong>not</strong> a tax filing submission.
+    Tax numbers in the App are estimates only.
   </p>
 
   <h3>Does receipt OCR need the internet?</h3>
@@ -67,8 +85,8 @@
 
   <h3>How do I subscribe, restore, or cancel Pro?</h3>
   <ul>
-    <li>Subscribe: open the in-app Pro paywall (Settings → Upgrade to Pro).</li>
-    <li>Restore after reinstalling: Settings → Restore Purchases.</li>
+    <li>Subscribe: open the in-app Pro paywall (<strong>More → Upgrade</strong> / paywall entry).</li>
+    <li>Restore after reinstalling: use <strong>Restore Purchases</strong> in More / paywall.</li>
     <li>Manage or cancel: iOS Settings → [Your Name] → Subscriptions → SoloFlow.</li>
     <li>Billing and refunds are handled by Apple under Apple’s policies
       (<a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>).</li>
@@ -79,9 +97,15 @@
     <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple’s Standard EULA</a>.
   </p>
 
+  <h3>Can I change currency?</h3>
+  <p>
+    No. SoloFlow locks the ledger to <strong>USD</strong> so totals and Tax Hub stay consistent.
+    There is no multi-currency mode.
+  </p>
+
   <h3>Are tax numbers official advice?</h3>
   <p>
-    No. Tax Hub figures are estimates for reference only. Consult a CPA before filing.
+    No. Tax Hub figures are educational estimates for reference only. Consult a CPA before filing.
   </p>
 
   <h3>OCR results are incomplete</h3>
@@ -89,6 +113,13 @@
     Prefer Scan Receipt (document-style capture with auto crop when available).
     Use even lighting, hold steady, and keep the full receipt in frame. You can always edit
     merchant, amount, and date before saving.
+  </p>
+
+  <h3>Invoice due reminders</h3>
+  <p>
+    If you enable notifications, reminders are scheduled <strong>on this device</strong>
+    (for example before a due date or when invoices are overdue). You can decline permission;
+    the App will not spam the system prompt every launch.
   </p>
 
   <h2>4. Legal</h2>
